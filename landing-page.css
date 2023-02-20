@@ -1,0 +1,67 @@
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  line-height: 80px;
+  letter-spacing: 3px;
+}
+
+.navbar ul {
+  margin-left: ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.navbar li:nth-child(2) {
+  margin-left: 100px;
+}
+
+.navbar li:nth-child(6) {
+  margin-left: 350px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* page one */
+.container {
+  width: 100%;
+  height: 800px;
+  background-image: url(./assets/landing-page/main-bg.jpg);
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+p,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 300px;
+  text-transform: uppercase;
+}
+
+/* page two */
+.pagetwo {
+  background-image: url(./assets/landing-page/black-paper.jpg);
+  width: 100%;
+  height: 800px;
+}
+
+/* page three */
+.pagethree {
+  background-image: url(./assets/landing-page/requirements.jpg);
+  width: 100%;
+  height: 800px;
+}
