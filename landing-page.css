@@ -7,13 +7,20 @@ font-family: 'Open Sans', sans-serif; */
 .navbar {
   width: 100%;
   height: 80px;
-  background-color: black;
-  opacity: 0.5;
   position: fixed;
   z-index: 999;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbarbox {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
 }
 
 .navbar .logo {
@@ -38,7 +45,7 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .navbar ul li:nth-child(5) a {
-  margin-left: 400px;
+  margin-left: 300px;
 }
 
 .navbar ul li a {
@@ -58,7 +65,7 @@ font-family: 'Open Sans', sans-serif; */
 .textpageone {
   width: 100%;
   height: 100px;
-  margin-top: 350px;
+  margin-top: 250px;
   text-align: center;
   position: absolute;
   font-family: "Bebas Neue", cursive;
@@ -93,4 +100,35 @@ font-family: 'Open Sans', sans-serif; */
   font-weight: bold;
   color: black;
   font-size: 18px;
+}
+
+.textpageone .scrolldown {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-top: 280px;
+}
+
+/* Page Two */
+.pagetwo {
+  width: 100%;
+  height: 800px;
+  background-image: url(./assets/landing-page/the-games-bg.jpg);
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+}
+
+.pagetwo h6 {
+  font-size: 28px;
+  margin-top: 200px;
+  margin-left: 200px;
+  position: absolute;
+}
+
+.pagetwo h1 {
+  font-size: 72px;
+  margin-top: 230px;
+  margin-left: 200px;
+  position: absolute;
 }
