@@ -56,7 +56,7 @@ font-family: 'Open Sans', sans-serif; */
 /* Page One */
 .pageone {
   width: 100%;
-  height: 800px;
+  height: 700px;
   background-image: url(./assets/landing-page/main-bg.jpg);
   background-size: 100%;
   background-position: 0 -200px;
@@ -106,7 +106,7 @@ font-family: 'Open Sans', sans-serif; */
   display: block;
   text-decoration: none;
   color: white;
-  margin-top: 280px;
+  margin-top: 150px;
 }
 
 /* Page Two */
@@ -122,13 +122,102 @@ font-family: 'Open Sans', sans-serif; */
 .pagetwo h6 {
   font-size: 28px;
   margin-top: 200px;
-  margin-left: 200px;
+  margin-left: 350px;
   position: absolute;
 }
 
 .pagetwo h1 {
   font-size: 72px;
   margin-top: 230px;
-  margin-left: 200px;
+  margin-left: 300px;
   position: absolute;
+}
+
+/* Carousel */
+
+.carousel {
+  height: 400px;
+  position: absolute;
+  width: 600px;
+  display: block;
+  margin: 200px 650px;
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+/* .arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+} */
+
+.arrow-prev {
+  background-image: url(./assets/landing-page/switch.svg);
+  background-size: cover;
+  left: 140px;
+  position: absolute;
+  top: 180px;
+  padding: 10px;
+  height: 20px;
+}
+
+.arrow-next {
+  background-image: url(./assets/landing-page/switch.svg);
+  background-size: cover;
+  right: 30px;
+  position: absolute;
+  top: 180px;
+  padding: 10px;
+  height: 20px;
+  transform: rotate(180deg);
+}
+
+[id^="item"] {
+  display: none;
+}
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background-image: url(./assets/landing-page/rockpaperstrategy-1600.jpg);
+  background-size: cover;
+  left: -110px;
+}
+
+.item-2 {
+  background-image: url(./assets/landing-page/rockpaperstrategy-1600.jpg);
+  background-size: cover;
+  left: -110px;
+}
+
+.item-3 {
+  background-image: url(./assets/landing-page/rockpaperstrategy-1600.jpg);
+  background-size: cover;
+  left: -110px;
+}
+
+*:target ~ .item-1 {
+  opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+  opacity: 1;
+}
+
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
 }
